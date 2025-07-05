@@ -4,8 +4,6 @@
 
 This template provides a complete fullstack setup for building modern React applications with TypeScript, Vite, Hono backend, Cloudflare Workers, and shadcn/ui components. It features hot module replacement, ESLint integration, Tailwind CSS styling, and the flexibility of Workers deployments.
 
-![React + TypeScript + Vite + Hono + Cloudflare Workers + shadcn/ui](https://imagedelivery.net/wSMYJvS3Xw-n339CbDyDIA/fc7b4b62-442b-4769-641b-ad4422d74300/public)
-
 <!-- dash-content-start -->
 
 🚀 Supercharge your web development with this powerful stack:
@@ -180,3 +178,5 @@ npm run deploy
 
 This template is open source and available under the [MIT License](LICENSE).  
 It was based on the [Cloudflare Fullstack Template](https://github.com/cloudflare/templates/tree/main/vite-react-template)
+
+(c) 2025 Claudio Silva
