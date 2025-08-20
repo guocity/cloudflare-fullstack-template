@@ -81,11 +81,58 @@ Your application will be available at [http://localhost:5173](http://localhost:5
 npx shadcn-ui@latest add [component-name]
 ```
 
-Available components include: accordion, alert, avatar, badge, button, card, checkbox, dialog, dropdown-menu, form, input, label, popover, select, sheet, table, tabs, toast, tooltip, and many more.
+| Component Name | Description |
+|----------------|-------------|
+| Accordion | A vertically stacked set of interactive headings that each reveal a section of content. |
+| Alert Dialog | A modal dialog for displaying important messages or confirmations to the user. |
+| Alert | Displays important messages or notifications to the user. |
+| Aspect Ratio | Maintains a consistent width-to-height ratio for responsive design elements. |
+| Avatar | Represents a user or entity with an image or initials. |
+| Badge | Small count or status indicators for UI elements. |
+| Breadcrumb | Navigational aid that displays the user's current location within a hierarchy. |
+| Button | Clickable element used to trigger actions. |
+| Calendar | Displays a calendar interface for date selection. |
+| Card | A flexible and extensible content container. |
+| Carousel | A slideshow component for cycling through elements. |
+| Chart | Visual representation of data using various chart types. |
+| Checkbox | Allows the user to select one or more options from a set. |
+| Collapsible | A component that can expand or collapse to show or hide content. |
+| Command | Provides a command-line interface experience within the UI. |
+| Context Menu | A menu that appears upon user interaction, offering contextual actions. |
+| Dialog | A modal window that overlays the main content to capture user attention. |
+| Drawer | Sliding panel that enters from the side of the screen to display additional content. |
+| Dropdown Menu | Toggleable menu that allows users to choose from a list of options. |
+| Form | Collection of input fields and controls for user data entry. |
+| Hover Card | Displays additional information when a user hovers over an element. |
+| Input OTP | Specialized input for one-time password (OTP) entry. |
+| Input | Field for user text input. |
+| Label | Text label associated with a form control. |
+| Menubar | Horizontal menu for navigating application sections. |
+| Navigation Menu | Component for primary site navigation. |
+| Pagination | Controls for navigating through paginated content. |
+| Popover | Small overlay that provides additional information or actions. |
+| Progress | Visual indicator of task completion status. |
+| Radio Group | Set of options where only one can be selected at a time. |
+| Resizable | Allows elements to be resized by the user. |
+| Scroll-area | Container that enables custom scroll behavior. |
+| Select | Dropdown list for selecting options. |
+| Separator | Visual divider between content sections. |
+| Sheet | Overlay panel that slides in from the side or bottom. |
+| Sidebar | Vertical navigation component typically placed on the side of the screen. |
+| Skeleton | Placeholder component used while content is loading. |
+| Slider | Allows users to select a value from a range by moving a handle. |
+| Sonner | Component for displaying toast notifications. |
+| Switch | Toggle between two states, such as on and off. |
+| Table | Displays data in rows and columns. |
+| Tabs | Allows users to switch between different views or sections. |
+| Textarea | Multi-line text input field. |
+| Toggle Group | Group of toggle buttons that function as a single selection. |
+| Toggle | Button that switches between two states. |
+| Tooltip | Small pop-up box that provides additional information about an element. |
 
 ### Path Aliases
 
-- Use `@/components/ui/` to import any shadcn/ui component (e.g., `import { Button } from "@/components/ui/button"`)
+- Use `@/components/ui/` to import any shadcn/ui component (e.g., `import { Button } from '@/components/ui/button'`)
 - Use `@/lib/` to import utility helpers (e.g., `import { cn } from "@/lib/utils"`)
 
 ### shadcn/ui Theme & Customization
