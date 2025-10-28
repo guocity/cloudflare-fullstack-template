@@ -71,7 +71,7 @@ function Home() {
                 count is {count}
               </Button>
               <p className="text-sm text-muted-foreground text-center">
-                Edit <code className="bg-muted px-1 py-0.5 rounded">src/App.tsx</code> and save to test HMR
+                Edit <code className="bg-muted px-1 py-0.5 rounded">src/react-app/Home.tsx</code> and save to test HMR
               </p>
             </CardContent>
           </Card>
