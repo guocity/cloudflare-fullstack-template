@@ -18,6 +18,15 @@ export type ChartConfig = {
   )
 }
 
+type PayloadItem = {
+  dataKey?: string
+  name?: string
+  value?: any // eslint-disable-line @typescript-eslint/no-explicit-any
+  payload?: any // eslint-disable-line @typescript-eslint/no-explicit-any
+  color?: string
+  fill?: string
+}
+
 type ChartContextProps = {
   config: ChartConfig
 }
@@ -112,7 +121,7 @@ const ChartTooltipContent = React.forwardRef<
       nameKey?: string
       labelKey?: string
       label?: string
-      payload?: Array<any>
+      payload?: Array<PayloadItem>
     }
 >(
   (
@@ -187,7 +196,7 @@ const ChartTooltipContent = React.forwardRef<
       >
         {!nestLabel ? tooltipLabel : null}
         <div className="grid gap-1.5">
-          {payload.map((item: any, index: number) => {
+          {payload.map((item: PayloadItem, index: number) => {
             const key = `${nameKey || item.name || item.dataKey || "value"}`
             const itemConfig = getPayloadConfigFromPayload(config, item, key)
             const indicatorColor = color || item.payload?.fill || item.color
@@ -263,7 +272,7 @@ const ChartLegend = RechartsPrimitive.Legend
 const ChartLegendContent = React.forwardRef<
   HTMLDivElement,
   React.ComponentProps<"div"> & {
-    payload?: Array<any>
+    payload?: Array<PayloadItem>
     verticalAlign?: "top" | "bottom"
     hideIcon?: boolean
     nameKey?: string
@@ -288,7 +297,7 @@ const ChartLegendContent = React.forwardRef<
           className
         )}
       >
-        {payload.map((item: any) => {
+        {payload.map((item: PayloadItem) => {
           const key = `${nameKey || item.dataKey || "value"}`
           const itemConfig = getPayloadConfigFromPayload(config, item, key)
 
